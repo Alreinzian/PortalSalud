@@ -1,0 +1,36 @@
+#server:
+#  port: 8085
+#  
+#spring:
+#  datasource:
+#    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+#    url: jdbc:sqlserver://ms_usuario.mssql.somee.com;databaseName=ms_usuario;TrustServerCertificate=True;?&useSSL=false
+#    username: rein_SQLLogin_1
+#    password: 3m7dlecrjb
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.SQLServerDialect
+#  application:
+#    name: ESPECIALIDAD-SERVICE
+server:
+  port: 8085
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://doctor-service.clde9yh9ja5z.us-east-1.rds.amazonaws.com:3306/doctor
+    username: admin
+    password: admin1234
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+  application:
+    name: USUARIOS-SERVICE
